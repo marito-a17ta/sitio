@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PixelNorte - Contacto</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header id="site-header">
+    <h1>PixelNorte</h1>
+    <nav id="nav-principal">
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="servicios.html">Servicios</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="contacto">
+      <h2>Formulario de Contacto</h2>
+      <p>Envianos tu consulta y te responderemos a la brevedad.</p>
+
+      <form id="formulario-contacto" action="#" method="post">
+        <div>
+          <label for="nombre">Nombre completo:</label>
+          <input type="text" id="nombre" name="nombre" required placeholder="Tu nombre">
+        </div>
+
+        <div>
+          <label for="email">Correo electrónico:</label>
+          <input type="email" id="email" name="email" required placeholder="tu@email.com">
+        </div>
+
+        <div>
+          <label for="telefono">Teléfono:</label>
+          <input type="tel" id="telefono" name="telefono" placeholder="299 1234567">
+        </div>
+
+        <div>
+          <label for="servicio">Servicio de interés:</label>
+          <select id="servicio" name="servicio">
+            <option value="institucional">Sitio Web Institucional</option>
+            <option value="ecommerce">Tienda Online</option>
+            <option value="rediseno">Rediseño Web</option>
+            <option value="mantenimiento">Mantenimiento</option>
+          </select>
+        </div>
+
+        <div class="campo-ancho">
+          <label>¿Cómo preferís que te contactemos?</label>
+          <div>
+            <input type="checkbox" id="pref-email" name="preferencia" value="email">
+            <label for="pref-email" style="display:inline;">Email</label>
+
+            <input type="checkbox" id="pref-telefono" name="preferencia" value="telefono">
+            <label for="pref-telefono" style="display:inline;">Teléfono</label>
+
+            <input type="checkbox" id="pref-wsp" name="preferencia" value="whatsapp">
+            <label for="pref-wsp" style="display:inline;">WhatsApp</label>
+          </div>
+        </div>
+
+        <div class="campo-ancho">
+          <label for="mensaje">Mensaje:</label>
+          <textarea id="mensaje" name="mensaje" rows="4" required placeholder="Escribí tu mensaje aquí..."></textarea>
+        </div>
+
+        <div class="campo-ancho">
+          <button type="submit">Enviar Consulta</button>
+        </div>
+      </form>
+    </section>
+  </main>
+
+  <footer id="site-footer">
+    <p>&copy; 2026 PixelNorte - Todos los derechos reservados.</p>
+  </footer>
+
+</body>
+</html>
