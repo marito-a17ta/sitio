@@ -8,3 +8,4 @@ Sitio Web institucional de PixelNorte, desarrollado para el TP3	Integrador de La
 - `contacto.html`: Formulario de Contacto.
 - `style.css`: Estilos de Sitio (Flexbox, Grid y Mobile First).
 
+## Estado del despliegue: Publicado y protegido
