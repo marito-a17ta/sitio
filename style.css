@@ -74,10 +74,10 @@ main {
   background-color: #F4F6F9; 
 }
 
-#tabla-servicios { 
-  width: 100%; 
-  border-collapse: collapse; 
-  margin: 16px 0; 
+#tabla-servicios {
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.10);
 }
 
 #tabla-servicios th, 
@@ -87,13 +87,21 @@ main {
   text-align: left; 
 }
 
-#tabla-servicios th { 
-  background-color: #1E3A5F; 
-  color: #ffffff; 
+#tabla-servicios th {
+    letter-spacing: 0.5px;
 } 
 
-#tabla-servicios tbody tr:nth-child(even) { 
-  background-color: #F4F6F9; 
+#tabla-servicios tbody tr {
+    transition: background-color 0.3s ease;
+}
+
+#tabla-servicios tbody tr:hover {
+    background-color: #EAF2FF;
+}
+
+#tabla-servicios td:last-child {
+    font-weight: bold;
+    color: #198754;
 }
 
 #formulario-contacto { 
